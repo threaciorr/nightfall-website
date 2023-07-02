@@ -1,0 +1,270 @@
+#contact {
+    width: 100%;
+    background-color: rgba(2, 2, 18, 0);
+}
+.contact-container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.contact-background {
+    margin: -2px auto;
+    width: 1150px;
+    display: flex;
+    border-radius: 2rem;
+    border: 3.5px solid white;
+    flex-direction: column;
+}
+.contact-heading {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-title {
+    margin: 2rem;
+}
+.contact-title p {
+    font-size: 1rem;
+    color: rgb(197, 197, 197);
+}
+.contact-title h1 {
+    font-size: 3rem;
+    color: rgb(245, 245, 245);
+}
+.contact-img {
+    width: 100px;
+    margin-right: 2rem;
+    margin-top: 1.25rem;
+    align-items: center;
+}
+.contact-img img {
+    width: 100%;
+    filter: drop-shadow(1px 1px 10px #ffffff4d);
+}
+.formnship {
+    width: 100%;
+    display: flex;
+    flex-basis: 1fr 1fr;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0 0 0;
+    padding-inline: 2rem 1rem;
+}
+.your-email {
+    padding-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: rgb(245, 245, 245);
+}
+.email-input {
+    background: transparent;
+    background-image: linear-gradient(#0101319b, #0f0f4c9b);
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    width: 97.5%;
+    color: rgb(245, 245, 245);
+    border: none;
+    outline: 2px solid rgb(245, 245, 245);;
+    box-sizing: border-box;
+    transition: .25s all ease;
+}
+.email-input::placeholder {
+    color: rgba(255, 255, 255, 0.451);
+}
+.email-input:focus {
+    outline: 2px solid #000fff;
+    filter: drop-shadow(1px 1px 10px #0011ff77);
+}
+.subject {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding-inline: 2rem 1rem;
+}
+.title-subject {
+    padding-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: rgb(245, 245, 245);
+}
+.subject-input {
+    background: transparent;
+    background-image: linear-gradient(#0101319b, #0f0f4c9b);
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    width: 97.5%;
+    color: rgb(245, 245, 245);
+    border: none;
+    outline: 2px solid rgb(245, 245, 245);;
+    box-sizing: border-box;
+    transition: .25s all ease;
+}
+.subject-input::placeholder {
+    color: rgba(255, 255, 255, 0.451);
+}
+.subject-input:focus {
+    outline: 2px solid #000fff;
+    filter: drop-shadow(1px 1px 10px #0011ff77);
+}
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+    padding-inline: 2rem 1rem;
+}
+.title-message {
+    padding-bottom: 0.5rem;
+    font-size: 1.25rem;
+    color: rgb(245, 245, 245);
+}
+.message-input {
+    background: transparent;
+    background-image: linear-gradient(#0101319b, #0f0f4c9b);
+    font-size: 1rem;
+    border-radius: 1rem;
+    padding: 1rem 0 1rem 1rem;
+    width: 97.5%;
+    resize: vertical;
+    margin-bottom: 2rem;
+    color: rgb(245, 245, 245);
+    border: none;
+    outline: 2px solid rgb(245, 245, 245);;
+    box-sizing: border-box;
+    transition: .25s all ease;
+}
+.message-input::placeholder {
+    color: rgba(255, 255, 255, 0.451);
+}
+.message-input:focus {
+    outline: 2px solid #000fff;
+    filter: drop-shadow(1px 1px 10px #0011ff77);
+}
+/*ship*/
+.ship {
+    width: 100%;
+    align-items: center;
+    object-fit: cover;
+    height: auto;
+}
+/*button*/
+.button-conteiner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.button-submit {
+    background: transparent;
+    background-image: linear-gradient(#0101319b, #0f0f4c9b);
+    height: 4rem;
+    width: 12rem;
+    border-radius: 1rem;
+    color: gray;
+    font-size: 1rem;
+    color: rgb(245, 245, 245);
+    border: none;
+    outline: 2px solid rgb(245, 245, 245);;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+@media  (max-width: 1350px) {
+    .contact-background {
+        width: 1000px;
+    }
+}
+@media  (max-width: 1150px) {
+    .contact-background {
+        width: 1048px;
+        border-radius: 0 2rem 2rem 2rem;
+    }
+}
+@media  (max-width: 1140px) {
+    .contact-background {
+        width: 1080px;
+        border-radius: 2rem;
+    }
+}
+@media  (max-width: 1100px) {
+    .contact-background {
+        width: 95%;
+    }
+}
+@media  (max-width: 950px) {
+    .formnship {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .ship {
+        width: 100%;
+        align-items: center;
+        margin: auto;
+        object-fit: cover;
+        height: 20rem;
+    }
+}
+@media (max-width: 650px) {
+    .contact-heading {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-title {
+        margin: 2rem;
+        color: white;
+    }
+    .contact-title p {
+        font-size: 1rem;
+    }
+    .contact-title h1 {
+        font-size: 3rem;
+    }
+    .contact-img {
+        display: none;
+    }
+    .contact-title {
+        margin: 1.2rem;
+    }
+    .email {
+        padding-inline: 1.2rem .5rem;
+    }
+    .subject {
+        padding-inline: 1.2rem .5rem;
+    }
+    .message {
+        padding-inline: 1.2rem .5rem;
+    }
+}
+@media (max-width: 480px) {
+    .contact-title h1 {
+        font-size: 2.5rem;
+    }
+    .title-message {
+        font-size: 1rem;
+    }
+    .title-subject {
+        font-size: 1rem;
+    }
+    .your-email {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 400px) {
+    .contact-title h1 {
+        font-size: 2rem;
+    }
+    .contact-title p {
+        font-size: 0.8rem;
+    }
+    .button-submit {
+        width: 10rem;
+    }
+}

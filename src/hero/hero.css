@@ -1,0 +1,104 @@
+#hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    object-fit: contain;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(3, 5, 26));
+}
+.video {
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    align-items: center;
+}
+.hero-text {
+    z-index: 0;
+}
+.hero-text p{
+    color: rgb(245, 245, 245);
+    display: flex;
+    font-size: 2rem;
+    margin: 0 0 1.5rem 8rem;
+}
+.text p span {
+    filter: drop-shadow(0px 0px 10px #fff);
+    margin-right: -8rem;
+}
+.motion-container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 5rem;
+    width: 100%;
+}
+.motion-scroll {
+    width: 12px;
+    height: 38px;
+    border-radius: 1.5rem;
+    border: 4px solid #c5c5c5;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0.5rem
+}
+.motion-dot {
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 100%;
+    background-color: #c5c5c5;
+    margin-bottom: 0.25rem;
+}
+@media  (max-width: 1300px) {
+    .text p span {
+        margin-right: -8rem;
+    }
+}
+@media  (max-width: 1150px) {
+    .hero-text p {
+        margin: 0 0 0 4rem;
+    }
+    .text p span {
+        margin-right: -4rem;
+    }
+}
+@media  (max-width: 800px) {
+    .hero-text p {
+        margin: 0 0 0 2rem;
+    }
+    .text p span {
+        margin-right: -2rem;
+    }
+}
+@media  (max-width: 400px) {
+    .hero-text p {
+        margin: 0 0 0 1rem;
+    }
+    .text p span {
+        margin-right: -1rem;
+    }
+    .motion-container {
+        bottom: 2rem; 
+    }
+}
+@media  (max-width: 300px) {
+    .hero-text p {
+        margin: 0 0 0 0.5rem;
+    }
+    .text p span {
+        margin-right: -0.5rem;
+    }
+    .hero-text p {
+        font-size: 1.75rem;
+    }
+    .motion-container {
+        bottom: 3rem; 
+    }
+}

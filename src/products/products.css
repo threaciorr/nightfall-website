@@ -1,0 +1,230 @@
+.kits_cards {
+    margin-top: 5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    max-width: 1400px;
+    height: 100%;
+}
+#products {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.kits {
+    height: 100%;
+    margin-bottom: 5rem;
+    width: 100%;
+}
+.kits_title {
+    margin-left: -3.75rem;
+    padding: 5rem 0 1rem 0;
+}
+.kits_title h1{
+    color: rgb(245, 245, 245);
+    font-size: 3.5rem;
+}
+.kits_title p{
+    color: rgb(197, 197, 197);
+    font-size: 1rem;
+    padding: 0 5rem 0 0;
+}
+.tilt {
+    width: 25rem;
+}
+.card {
+    width: 100%;
+    border-radius: 20px;
+    background: "#00cea8";
+    background: black;
+    border: 3px solid gray;
+    overflow: hidden;
+}
+.card-content {
+    background: transparent;
+    border-radius: 20px;
+    min-height: 280px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.card-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 17px 17px 0 0;
+    border-bottom: 3px solid gray;
+}
+.card-title {
+    color: #fff;
+    background-color: black;
+    border-radius: 0 0 17px 17px;
+    padding: 1rem;
+}
+.card-title p {
+    color: rgb(205, 205, 205);
+    margin-top: 0.5rem;
+}
+.download {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    top: 1.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: rgba(0, 0, 0, 0.600);
+    border-radius: 50%;
+}
+.circle {
+    padding: 0.5rem;
+    color: #dbdbdbe7;
+    font-size: 2rem;
+    transition: .25s all ease;
+}
+.circle:hover {
+    color: #ffffff;
+}
+
+@media  (max-width: 1450px) {
+    .kits_cards {
+        padding-inline: 2rem;
+    }
+    .kits_title {
+        margin-left: -1.75rem;
+        padding: 10rem 0 1rem 2rem;
+    }
+}
+@media  (max-width: 1350px) {
+    .kits_title {
+        margin-left: 0;
+        padding: 10rem 0 1rem 2rem;
+    }
+    .tilt {
+        width: 22rem;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .download {
+        top: 1.25rem;
+        right: 1.25rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .circle {
+        padding: 0.5rem;
+        font-size: 1.75rem;
+    }
+}
+@media  (max-width: 1200px) {
+    .tilt {
+        width: 20rem;
+    }
+}
+@media  (max-width: 1150px) {
+    .tilt {
+        width: 20rem;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .download {
+        top: 1.25rem;
+        right: 1.25rem;
+        width: 3rem;
+        height: 3rem;
+    }
+    .circle {
+        padding: 0.5rem;
+        font-size: 1.75rem;
+    }
+    .kits_title {
+        padding: 6rem 0 1rem 2rem;
+    }
+}
+@media  (max-width: 750px) {
+    .tilt {
+        width: 16rem;
+    }
+    .card-title {
+        font-size: 0.75rem;
+    }
+    .download {
+        top: 1.25rem;
+        right: 1.25rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+    .circle {
+        padding: 0.5rem;
+        font-size: 1.75rem;
+    }
+
+    .kits_cards {
+        padding-inline: 2rem;
+    }
+    .kits_title {
+        padding: 6rem 0 1rem 2rem;
+    }
+}
+@media (max-width: 620px) {
+    .kits_title {
+        padding: 6rem 0 0 1rem;
+    }
+    .card-title {
+        font-size: 1rem;
+    }
+    .download {
+        top: 1.25rem;
+        right: 1.25rem;
+        width: 3.25rem;
+        height: 3.25rem;
+    }
+    .circle {
+        padding: 0.5rem;
+        font-size: 1.9rem;
+    }
+}
+@media (max-width: 480px) {
+    .tilt {
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .kits_title h1{
+        font-size: 2.5rem;
+    }
+    .kits_title p{
+        font-size: 0.8rem;
+    }
+    .kits_title {
+        padding: 6rem 0 0 1rem;
+    }
+    .card-title {
+        font-size: 0.75rem;
+    }
+    .download {
+        top: 1.25rem;
+        right: 1.25rem;
+        width: 3rem;
+        height: 3rem;
+    }
+}
+@media (max-width: 400px) {
+    .download {
+        top: 1.25rem;
+        right: 1.25rem;
+        width: 2.75rem;
+        height: 2.75rem;
+    }
+}
+
